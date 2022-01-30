@@ -46,7 +46,7 @@ class Course:
         self.description = description
 
     def addIngridient(self, name, amount, unit):
-        self.ingridients.update(ingridient(name, int(amount), unit).getIngridient())
+        self.ingridients.update(ingridient(name, float(amount), unit).getIngridient())
 
     def storeCourse(self):
         course = {'description':self.description, 'ingridients':self.ingridients}
@@ -60,6 +60,9 @@ class Course:
             courses = json.load(fp)
         except json.decoder.JSONDecodeError:
             courses = {}
+
+        if self.courseType not in courses:
+            courses[self.courseType] = {}
 
         courses[self.courseType][self.name] = course
 

@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "courses": {
+    "breakfast": {
+      "scrambled eggs": {
+        "description": "Beat eggs and cook in pan",
+        "ingridients": {
+          "eggs": {
+            "amount": 2.0,
+            "unit": "pieces"
+          },
+          "butter": {
+            "amount": 10.0,
+            "unit": "g"
+          }
+        }
+      },
+      "toast": {
+        "description": "",
+        "ingridients": {}
+      },
+      "oatmeal with fruits": {
+        "description": "Healthy breakfast",
+        "ingridients": {
+          "oats": {
+            "amount": 50.0,
+            "unit": "g",
+            "calories": 190.0,
+            "protein": 6.0,
+            "fat": 3.0,
+            "carbs": 32.0
+          },
+          "milk": {
+            "amount": 200.0,
+            "unit": "ml",
+            "calories": 120.0,
+            "protein": 8.0,
+            "fat": 5.0,
+            "carbs": 12.0
+          },
+          "banana": {
+            "amount": 100.0,
+            "unit": "g",
+            "calories": 90.0,
+            "protein": 1.0,
+            "fat": 0.0,
+            "carbs": 23.0
+          }
+        }
+      }
+    },
+    "lunch": {
+      "pasta": {
+        "description": "Boil pasta and add sauce",
+        "ingridients": {
+          "pasta": {
+            "amount": 100.0,
+            "unit": "g"
+          },
+          "tomato_sauce": {
+            "amount": 50.0,
+            "unit": "ml"
+          }
+        }
+      }
+    },
+    "dinner": {
+      "salad": {
+        "description": "Mix vegetables",
+        "ingridients": {
+          "lettuce": {
+            "amount": 50.0,
+            "unit": "g"
+          },
+          "tomato": {
+            "amount": 100.0,
+            "unit": "g"
+          }
+        }
+      }
+    }
+  }
+}

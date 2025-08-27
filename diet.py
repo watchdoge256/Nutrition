@@ -6,6 +6,13 @@ import sys
 import random
 import csv
 
+# DEPRECATION WARNING
+print("⚠️  DEPRECATION WARNING ⚠️", file=sys.stderr)
+print("diet.py is deprecated and will be removed in a future version.", file=sys.stderr)
+print("Please use the new modular CLI instead:", file=sys.stderr)
+print("  python -m nutrition.cli --help", file=sys.stderr)
+print("", file=sys.stderr)
+
 class ingridient:
     unit = None
     amount = None

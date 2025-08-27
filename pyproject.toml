@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nutrition"
+version = "1.0.0"
+description = "Nutrition planning and macro tracking tool"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "watchdoge256"}]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+nutrition = "nutrition.cli:main"
